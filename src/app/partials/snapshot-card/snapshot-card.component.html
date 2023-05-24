@@ -1,0 +1,7 @@
+<div class='card snapshot-card' [ngClass]="late ? 'warning' : 'normal' ">
+    <div class="snapshot-card-contents">
+        <fa-icon [icon]="icon" [ngStyle]="{'color': late ? 'yellow' : 'white'}"></fa-icon>
+        &nbsp;
+        <b>Snapshot Datetime:</b> {{datetime}}
+    </div>
+</div>
