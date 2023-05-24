@@ -1,0 +1,1 @@
+export const datetime = '2023-05-25 23:42:42'

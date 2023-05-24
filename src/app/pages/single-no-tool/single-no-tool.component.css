@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    min-width: 450px;
+    overflow: hide;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.single-tool-header {
+    display:flex;
+    justify-content: space-between;
+}
+
+#single-tool-contents > #first-row {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+#summary-container {
+    margin-right: 10px;
+    height: 45vh;
+    width: 30%;
+}
+
+
+#filter-container {
+    margin-left: 10px;
+    height: 45vh;
+    width: 69%;
+}
+
+@media screen and (max-width: 950px){    
+    #single-tool-contents > #first-row {
+        display: inline-block; 
+    }
+    
+    #summary-container {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #filter-container {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
