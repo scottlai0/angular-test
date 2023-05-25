@@ -9,7 +9,7 @@ import { SnapshotCardComponent } from './components/snapshot-card/snapshot-card.
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BodyComponent } from './body/body.component';
 import { SidenavComponent } from './partials/sidenav/sidenav.component';
-import { DarkRadioButtonComponent } from './components/dark-radio-button/dark-radio-button.component';
+import { SlidingRadioCheckboxComponent } from './components/sliding-radio-checkbox/sliding-radio-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { DarkRadioButtonComponent } from './components/dark-radio-button/dark-ra
     SnapshotCardComponent,
     BodyComponent,
     SidenavComponent,
-    DarkRadioButtonComponent
+    SlidingRadioCheckboxComponent
   ],
   imports: [
     CommonModule,

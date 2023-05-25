@@ -1,0 +1,72 @@
+.dark-radio {    
+    --height: 20px;
+
+    --border-radius: calc(var(--height) / 2);
+    --outer-width: calc(var(--height) * 2.5);
+    --inner-width: calc(var(--outer-width) * 0.66);
+    --mini-light-offset: calc(var(--outer-width) * 0.541);
+
+    --transition: 0.3s;
+
+    position: relative;
+}
+
+input[type="checkbox"] {
+    width: var(--outer-width);
+    height: var(--height);
+    outline: none;
+    background: rgb(110, 110, 110);
+    cursor: pointer;
+    border-radius:var(--border-radius);
+    -webkit-appearance: none;
+    appearance: none;
+
+    box-shadow: calc(var(--height) / -8) calc(var(--height) / -8) calc(var(--height) / 2) rgba(255,255,255,0.1),
+                calc(var(--height) / 8) calc(var(--height) / 8) calc(var(--height) / 4) rgba(0,0,0,1),
+                inset  calc(var(--height) / -20) calc(var(--height) / -20) rgba(255,255,255,0.1),
+                inset calc(var(--height) / 20) calc(var(--height) / 20) calc(var(--height) / 8) rgba(0,0,0,0.5),
+                0 0 0 calc(var(--height) / 20) #1f1f1f;
+    transition: var(--transition)
+}
+
+input[type="checkbox"]:checked {
+    background: #71d2ff;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--inner-width);
+    height: var(--height);
+    background: linear-gradient(to top, #000,#555);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(0.98, 0.96);
+    transition: var(--transition)
+}
+
+input[type="checkbox"]:checked::before {
+    left: calc(var(--outer-width) - var(--inner-width) + 1px);
+}
+
+input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: var(--mini-light-offset);
+    height: calc(var(--height) * 0.1);
+    width: calc(var(--height) * 0.1);
+    background: #588194;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+input[type="checkbox"]:checked::after {
+   left: calc(calc(var(--outer-width) * 0.54) + calc(var(--outer-width) - var(--inner-width)));
+   background: white;
+   box-shadow: 0 0 5px #63cdff,
+               0 0 15px #63cdff,
+               0 0 30px #63cdff;
+}
