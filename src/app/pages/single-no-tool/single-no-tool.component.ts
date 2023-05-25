@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faFilter, faTable } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'single-no-tool',
@@ -7,6 +6,5 @@ import { faFilter, faTable } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./single-no-tool.component.scss']
 })
 export class SingleNoToolComponent {
-  filter_icon = faFilter;
-  table_icon = faTable;
+
 }

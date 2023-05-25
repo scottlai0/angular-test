@@ -1,8 +1,9 @@
 <div class='card snapshot-card' [ngClass]="late ? 'warning' : 'normal' ">
     <div class="snapshot-card-contents">
-        <i class="fas" [ngClass]="late ? 'fa-triangle-exclamation' : 'fa-checkbox' ">
-            &nbsp;
-            <b>Snapshot Datetime:</b> {{datetime}}
-        </i>
+        <i [ngClass]="late ? 'fas fa-triangle-exclamation' : 'fas fa-check-square' "></i>
+        &nbsp;
+        <b>Snapshot Datetime:</b>
+        &nbsp;
+        {{datetime}}
     </div>
 </div>
