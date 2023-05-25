@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ElementRef, ViewChild } from '@angular/core';
 import { v4 as uuid } from 'uuid';
 
 @Component({
@@ -9,10 +9,16 @@ import { v4 as uuid } from 'uuid';
 export class SlidingRadioCheckboxComponent {
   @Input() id?: String;
 
+  input_id: String = '';
   label_id: String = '';
 
   ngOnInit(){
     if (!this.id) this.id = uuid();
-    this.label_id = this.id + '-label'
+    this.input_id = 'input-' + this.id;    
+    this.label_id = 'label-' + this.id;
+  }
+
+  ngAfterViewInit(){
+    if (!this.id) this.id = uuid();
   }
 }
