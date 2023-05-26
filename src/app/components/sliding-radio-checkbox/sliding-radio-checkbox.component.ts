@@ -24,10 +24,11 @@ export class SlidingRadioCheckboxComponent {
   }
 
   toggleRadioCheckbox(){
-    this.radioDiv.forEach((e:any) => {
-      e.nativeElement.checked = !e.nativeElement.checked;
+    this.radioDiv.forEach((e: any) => {
+      if (e.nativeElement.id.includes('input')){
+        e.nativeElement.checked = !e.nativeElement.checked;
+      }
     })
-    console.log('-----')
     
   }
 }

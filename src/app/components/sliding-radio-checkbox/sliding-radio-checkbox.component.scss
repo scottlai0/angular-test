@@ -11,8 +11,11 @@
     position: relative;
 }
 
-.dark-radio-label:hover {
+.dark-radio-label {
     cursor: pointer;
+}
+
+.dark-radio-label:hover {
     translate: 3px;
     transition: 0.1s ease-in ;
 }
