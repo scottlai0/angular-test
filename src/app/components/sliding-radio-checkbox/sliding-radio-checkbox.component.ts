@@ -1,4 +1,4 @@
-import { Component, Input, ElementRef, ViewChild } from '@angular/core';
+import { Component, Input, ViewChildren } from '@angular/core';
 import { v4 as uuid } from 'uuid';
 
 @Component({
@@ -8,6 +8,7 @@ import { v4 as uuid } from 'uuid';
 })
 export class SlidingRadioCheckboxComponent {
   @Input() id?: String;
+  @ViewChildren('radioDiv') radioDiv: any;
 
   input_id: String = '';
   label_id: String = '';
@@ -20,5 +21,13 @@ export class SlidingRadioCheckboxComponent {
 
   ngAfterViewInit(){
     if (!this.id) this.id = uuid();
+  }
+
+  toggleRadioCheckbox(){
+    this.radioDiv.forEach((e:any) => {
+      e.nativeElement.checked = !e.nativeElement.checked;
+    })
+    console.log('-----')
+    
   }
 }
