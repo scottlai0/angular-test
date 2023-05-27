@@ -1,6 +1,7 @@
-
-<input #radioDiv id="{{input_id}}" class="dark-radio" type="checkbox" name="btn">
-&nbsp;
-<label (click)="toggleRadioCheckbox()" class="dark-radio-label" id="{{label_id}}">
-    <ng-content></ng-content>
-</label>
+<div class="dark-radio-wrapper">
+    <input #radioDiv id="{{input_id}}" class="dark-radio" type="checkbox" name="btn">
+    &nbsp;
+    <label #radioLabel (click)="toggleRadioCheckboxFromLabel()" class="dark-radio-label" id="{{label_id}}">
+        <ng-content></ng-content>
+    </label>
+</div>
