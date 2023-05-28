@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SideNavToggle } from './partials/sidenav/sidenav.component'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tool-spread-dev';
+
+  screenWidth= 0;
+  isSideNavCollapsed = false;
+
+  onToggleSideNav(data: SideNavToggle): void {
+    this.screenWidth = data.screenWidth;
+    this.isSideNavCollapsed = data.collapsed;
+  }
 }

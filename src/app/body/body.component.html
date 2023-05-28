@@ -1,3 +1,7 @@
-<div id="main-content">
-    <single-no-tool></single-no-tool>
+<!--div id="main-content">
+    <ng-content></ng-content>
+</div-->
+
+<div class="body" [ngClass]="getBodyClass()">
+    <router-outlet></router-outlet>
 </div>

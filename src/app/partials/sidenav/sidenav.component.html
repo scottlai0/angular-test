@@ -1,1 +1,28 @@
-<p>sidenav works!</p>
+<div #sideNav class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">F10</button>
+        <div class="logo-text" *ngIf="collapsed">Tool Spread</div>
+        <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+            <i class="fas fa-times close-icon"></i>
+        </button>
+    </div>
+    <br>
+    <ul class="sidenav-nav">
+        <div *ngFor="let group of navData" style="width:100%; margin-bottom: 10px;">
+            <div style="color: lightgray; width:100%; top: 10x; display: flex; justify-content: center">
+                <span *ngIf="!collapsed"><i class="fas fa-layer-group"></i></span>
+                <b *ngIf="collapsed" style="white-space: nowrap; animation: fadeIn">{{group.groupName}}</b>
+            </div>
+            <hr style="color:white">
+            <li class="sidenav-nav-item" *ngFor="let data of group.children">
+                <a class="sidenav-nav-link" [routerLink]="[data.routeLink]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}"
+                >
+                    <i class="sidenav-link-icon" [class]="data.icon"></i>
+                    <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>    
+                </a>
+            </li>
+        </div>
+    </ul>
+</div>
