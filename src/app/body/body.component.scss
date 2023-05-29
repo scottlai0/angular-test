@@ -21,26 +21,26 @@
     opacity: 0.3;
 }
 */
-
+@import url("../app.component.scss");
 
 .body {
-    width: calc(100% - 5rem);
+    width: calc(100% - var(--collapsed-width));
     top: 0;
-    margin-left: 5rem;
+    margin-left: var(--collapsed-width);
     height: 100vh;
     z-index: 0;
     position: relative;
-    transition: all 0.5s ease;
+    transition: all var(--transition-time) var(--transition-type);
     background: #F4F7FA;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .body-trimmed {
-    width: calc(100% - 5rem);
-    margin-left: 5rem;
+    width: calc(100% - var(--opened-width));
+    margin-left: var(--opened-width);
 }
 
 .body-md-screen {
-    width: calc(100% - 5rem);
-    margin-left: 5rem;
+    width: calc(100% - var(--collapsed-width));
+    margin-left: var(--collapsed-width);
 }

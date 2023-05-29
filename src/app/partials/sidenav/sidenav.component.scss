@@ -1,7 +1,6 @@
+@import url('../../app.component.scss');
+
 * {
-    --collapsed-width: 5rem;
-    --opened-width: 16.624rem;
-    --transition-time: 0.3s;
 
     @keyframes fadeIn {
         0% { opacity: 0; }
@@ -13,7 +12,7 @@
 .sidenav {
 
     background: #263238;
-    transition: all .3s ease;
+    transition: all var(--transition-time) var(--transition-type);
     position: fixed;
     z-index: 1;
     top: 0;

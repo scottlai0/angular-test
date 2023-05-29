@@ -33,6 +33,11 @@ export const navbarData = [
         groupName: 'Extras',
         children: [
             {
+                routeLink: 'settings',
+                icon: 'fas fa-gear',
+                label: 'Settings'
+            },
+            {
                 routeLink: 'about',
                 icon: 'fas fa-info-circle',
                 label: 'About'
