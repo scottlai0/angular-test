@@ -10,7 +10,7 @@ export const navbarData = [
         ]
     },
     {
-        groupName: 'Main',
+        groupName: 'Analytics Pages',
         children: [
             {
                 routeLink: 'tactical',
@@ -26,6 +26,16 @@ export const navbarData = [
                 routeLink: 'single-tool',
                 icon: 'fas fa-screwdriver-wrench',
                 label: 'Tool Releases'
+            },
+        ]
+    },
+    {
+        groupName: 'Background Templates',
+        children: [
+            {
+                routeLink: 'light-up-boxes',
+                icon: 'fas fa-square',
+                label: 'Lightup Boxes'
             },
         ]
     },
