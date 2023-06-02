@@ -1,0 +1,69 @@
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    color: white;
+}
+
+:host ::ng-deep .card {
+    width: 100%;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+}
+
+.bgAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(25,1fr);
+    grid-template-rows: repeat(25,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+:host ::ng-deep .colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 1s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+:host ::ng-deep .colorBox:hover {
+    background: #00bfff;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #00bfff;
+    filter: blur(60px);
+    animation: animBack 4s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
