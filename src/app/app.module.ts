@@ -14,6 +14,8 @@ import { SidenavComponent } from './partials/sidenav/sidenav.component';
 import { SlidingRadioCheckboxComponent } from './components/sliding-radio-checkbox/sliding-radio-checkbox.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { BackgroundLightupBoxComponent } from './components/background-lightup-box/background-lightup-box.component';
+import { HotTeaCupComponent } from './components/hot-tea-cup/hot-tea-cup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SettingsComponent } from './pages/settings/settings.component';
     SidenavComponent,
     SlidingRadioCheckboxComponent,
     AboutComponent,
-    SettingsComponent
+    SettingsComponent,
+    BackgroundLightupBoxComponent,
+    HotTeaCupComponent
   ],
   imports: [
     CommonModule,
