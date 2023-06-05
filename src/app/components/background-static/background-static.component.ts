@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-background-static',
+  selector: 'background-static',
   templateUrl: './background-static.component.html',
   styleUrls: ['./background-static.component.scss']
 })
