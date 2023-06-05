@@ -1,7 +1,7 @@
 <div #sideNav class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
     <div class="logo-container">
-        <button class="logo" (click)="toggleCollapse()">F10</button>
-        <div class="logo-text" *ngIf="collapsed">Tool Spread</div>
+        <button class="logo" (click)="toggleCollapse()"><i [class]="appLogo"></i></button>
+        <div class="logo-text" *ngIf="collapsed">{{ appName }}</div>
         <button class="btn-close" @fadeInOut @rotate *ngIf="collapsed" (click)="closeSidenav()">
             <i class="fas fa-times close-icon"></i>
         </button>

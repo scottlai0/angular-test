@@ -8,6 +8,7 @@ import { BackgroundLightupBoxComponent } from './components/background-lightup-b
 
 const routes: Routes = [
   { path: '', redirectTo: 'single-tool', pathMatch: 'full' }, 
+  { path: 'rerouter', redirectTo: 'single-tool', pathMatch: 'full' }, 
   { path: 'tactical', redirectTo: 'single-tool', pathMatch: 'full' }, 
   { path: 'qualified', redirectTo: 'single-tool', pathMatch: 'full' }, 
   { path: 'single-tool', component: SingleNoToolComponent },

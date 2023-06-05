@@ -1,6 +1,6 @@
 import { animate, style, transition, trigger, keyframes } from '@angular/animations';
 import { Component, EventEmitter, HostListener, ViewChild, Output, OnInit } from '@angular/core';
-import { navbarData } from './nav-data';
+import { navbarData, appName, appLogo } from './nav-data';
 
 export interface SideNavToggle {
   screenWidth: number;
@@ -45,6 +45,9 @@ export class SidenavComponent implements OnInit {
   collapsed = false;
   screenWidth = 0;
   navData = navbarData
+  appName = appName;
+  appLogo = appLogo;
+
 
   /*
   @ViewChild('sideNav') sideNav: any;
