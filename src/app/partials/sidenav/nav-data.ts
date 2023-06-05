@@ -45,6 +45,11 @@ export const navbarData = [
         groupName: 'Background Templates',
         children: [
             {
+                routeLink: 'background-static',
+                icon: 'fas fa-image',
+                label: 'Static Background'
+            },
+            {
                 routeLink: 'light-up-boxes',
                 icon: 'fas fa-square',
                 label: 'Lightup Boxes'

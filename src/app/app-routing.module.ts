@@ -4,6 +4,7 @@ import { SingleNoToolComponent } from './pages/single-no-tool/single-no-tool.com
 import { AboutComponent } from './pages/about/about.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { BackgroundLightupBoxComponent } from './components/background-lightup-box/background-lightup-box.component';
+import { BackgroundStaticComponent } from './components/background-static/background-static.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'qualified', redirectTo: 'single-tool', pathMatch: 'full' }, 
   { path: 'single-tool', component: SingleNoToolComponent },
 
+  { path: 'background-static', component: BackgroundStaticComponent },
   { path: 'light-up-boxes', component: BackgroundLightupBoxComponent },
 
   { path: 'settings', component: SettingsComponent },

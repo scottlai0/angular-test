@@ -16,6 +16,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { BackgroundLightupBoxComponent } from './components/background-lightup-box/background-lightup-box.component';
 import { HotTeaCupComponent } from './components/hot-tea-cup/hot-tea-cup.component';
+import { BackgroundStaticComponent } from './components/background-static/background-static.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HotTeaCupComponent } from './components/hot-tea-cup/hot-tea-cup.compone
     AboutComponent,
     SettingsComponent,
     BackgroundLightupBoxComponent,
-    HotTeaCupComponent
+    HotTeaCupComponent,
+    BackgroundStaticComponent
   ],
   imports: [
     CommonModule,
