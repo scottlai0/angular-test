@@ -34,6 +34,24 @@ export const navbarData = [
                 desc: 'Test page description'
             },        
             {
+                routeLink: 'qualified',
+                icon: 'fas fa-circle-check',
+                label: 'Test Page 3',
+                desc: 'Test page description'
+            },  
+            {
+                routeLink: 'qualified',
+                icon: 'fas fa-circle-check',
+                label: 'Test Page 4',
+                desc: 'Test page description'
+            },  
+            {
+                routeLink: 'qualified',
+                icon: 'fas fa-circle-check',
+                label: 'Test Page 5',
+                desc: 'Test page description'
+            },  
+            {
                 routeLink: 'single-tool',
                 icon: 'fas fa-screwdriver-wrench',
                 label: 'Tool Releases',
